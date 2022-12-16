@@ -46,6 +46,10 @@
     align-items: center;
 }
 
+.subforum-divider {
+    display: none;
+}
+
 
 /* Smart Phone Styles */
 @media screen and (max-width: 460px) {
@@ -58,6 +62,17 @@
         display: grid;
         grid-template-columns: 25% 75%;
         grid-template-rows: 65% 35%;
+    }
+
+    .subforum-stats {
+        font-size: 12px; 
+    }
+
+    .subforum-divider {
+        display: block;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
     }
 }
 
